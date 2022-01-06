@@ -30,7 +30,7 @@ class _ImportState extends State<Import> {
                 });
               },
               decoration: InputDecoration(
-                labelText: 'Titulo'),
+                icon: Icon(Icons.check) , labelText: 'Tema de la nota')
             ),
             Text('Nota'),
             TextFormField(
@@ -40,12 +40,12 @@ class _ImportState extends State<Import> {
                 });
               },
               decoration: InputDecoration(
-                labelText: 'Nota',
+                icon:Icon(Icons.notes_outlined),labelText: '¿De que se trata?',
               )
             ),
             Text('Color'),
             DropdownButton<Color>(
-              hint: Text("Hola"),
+              //hint: Text("Hola"),
               value: selectedColor,
               onChanged: (color) {
                 setState(() {
@@ -81,7 +81,7 @@ class _ImportState extends State<Import> {
                 ),
               ],
             ),
-            SizedBox(height: 20),
+            SizedBox(height: 10),
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children:[

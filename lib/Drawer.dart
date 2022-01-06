@@ -108,7 +108,7 @@ class _MyDrawerState extends State<MyDrawer> {
   getName() async{
     SharedPreferences prefs = await SharedPreferences.getInstance();
 
-    name = await prefs.getString('nam')??"";
+    name = await prefs.getString('nam')??"Usuario";
     setState(()=>name);
     //n = name.substring(0,1);
   }

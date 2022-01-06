@@ -50,9 +50,9 @@ class _FirstScreenState extends State<FirstScreen> {
       a = a.substring(17);
       if(a != '00.000Z'){
         texto = "Sin fecha establecida";
-        print(focusedDay);
+        /*print(focusedDay);
         print(nowday);
-        print(a);
+        print(a);*/
         }
       else{texto = b;}
       Nota nota = Nota(data['title'], data['cont'], data['them'],texto);
@@ -207,7 +207,7 @@ class _FirstScreenState extends State<FirstScreen> {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     indexa = prefs.getInt('value') ?? 0;
 
-    name = await prefs.getString('nam')??"";
+    name = await prefs.getString('nam')??"Usuario";
     setState(()=>name);
 
     //int inde = await prefs.getInt('index')??0;
